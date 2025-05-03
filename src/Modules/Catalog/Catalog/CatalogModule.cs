@@ -33,7 +33,7 @@ namespace Catalog
                 options.UseNpgsql(connectionString);
             });
 
-        services.AddScoped<IDataSeeder, CatalogDataSeeder>();
+            services.AddScoped<IDataSeeder, CatalogDataSeeder>();
 
             return services;
         }
